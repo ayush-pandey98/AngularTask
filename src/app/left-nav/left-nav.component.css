@@ -1,0 +1,95 @@
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: #6a6f74;
+    margin: 0px 5px;
+  }
+  .left-nav .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2em 0.7em 0 0.5em;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .logo-container .logo {
+    width: 100px;
+    margin-top: 1.47em;
+    margin-left: 1.47em;
+  }
+  .minimise-nav {
+    width: 2.4em;
+    margin-top: 1.6em;
+    position: absolute;
+    right: -1.5em;
+  }
+  .left-nav .heading {
+    color: #bbc2c8;
+    font-family: Roboto500;
+    font-size: 0.8em;
+    padding: 1.1em 1em;
+  }
+  .nav-option {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto500;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  .nav-option span {
+    color: #83888bd0;
+  }
+  .active {
+    background-color: #fde9e9;
+  }
+  .selected-text {
+    color: #f44848 !important;
+  }
+
+  .nav-role{
+    background-color: #fde6e6;
+  }
+  .nav-option .option {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+  .nav-option .option p {
+    font-size: 0.9em;
+    padding-left: 8px;
+    font-family: Roboto700;
+    color: #6a6f74b0;
+  }
+  .nav-option span img{
+    height: 16px;
+    width: 13px;
+    rotate: 90deg;
+  }
+  .nav-option .option img {
+    width: 20px;
+  }
+ a {
+    text-decoration: none;
+  }
+  .selected-option {
+    width: 4px;
+    border-radius: 5px 0 0 5px;
+    background-color: #f44848;
+    height: 38px;
+    position: absolute;
+    right: 0;
+  }
+  .management-container {
+    padding-top: 0.8em;
+  }

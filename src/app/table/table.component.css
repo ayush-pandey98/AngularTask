@@ -1,0 +1,141 @@
+.heading label{
+    cursor: pointer;
+  }
+  .heading .short-arrow {
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+  .employees-table {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+  }
+  .employees-table .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 25px;
+    height: 58px ;
+  }
+  .actions .left-section {
+    display: flex;
+    align-items: center;
+  }
+  .actions .left-section img {
+    height: 20px;
+  }
+  .actions .left-section button {
+    background-color: #f89191;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.831);
+    width: 60px;
+    height: 25px;
+    margin-left: 7px;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .header .heading {
+    background-color: #fafafc;
+    text-align: start;
+    height: 45px;
+    color: #455573cc;
+    font-size: 0.8em;
+  }
+  .heading .short-arrow {
+    height: 7px;
+    font-size: 8px;
+  }
+  .checkbox-th{
+   padding-left:18px;
+  }
+  td,
+  th {
+    padding: 8px;
+  }
+  td {
+    color: #404040;
+  }
+  tr {
+    border: solid;
+    border-width: 1px 0;
+    border-color: #d9d9d9;
+    height: 50px;
+  }
+  td input,
+  th input {
+    width: 16px;
+    height: 16px;
+    margin: 0px 13px;
+    opacity: 0.3;
+  }
+  th input:checked,
+  td input:checked {
+    opacity: 1;
+  }
+  .checkbox-td,
+  #checkbox-th {
+    text-align: center;
+  }
+  tr:hover {
+    background-color: #fff4f4;
+  }
+  .table .details {
+    display: flex;
+  }
+  .ellipses-image {
+    cursor: pointer;
+    width:12px;
+  }
+  .ellipse-dropdown {
+    position: absolute;
+    width: 73px;
+    background-color: rgb(246, 213, 210);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    right: 50px;
+  }
+  .ellipse-option {
+    padding: 5px;
+    font-size: 11px;
+  }
+  .hidden {
+    display: none;
+  }
+  div.hr-line {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #7a7a7a;
+  }
+  .details img {
+    height: 30px;
+    width: 30px;
+  }
+  .details .credentials {
+    padding-left: 10px;
+  }
+  .credentials .name {
+    font-size: 1em;
+  }
+  .credentials .email {
+    font-size: 0.8em;
+    color: #738096;
+  }
+  .header .heading-status {
+    width: 70px;
+  }
+  .table .status {
+    background-color: #e7f4e8;
+    color: #419077cb;
+    border-radius: 5px;
+    text-align: center;
+    padding: 7px 0px;
+    font-size: 0.8em;
+  }

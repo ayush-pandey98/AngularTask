@@ -1,0 +1,19 @@
+<main>
+    <app-top-nav></app-top-nav>
+<div class="actions">
+    <hgroup>
+        <h3>Roles</h3>
+        <p>All the roles are configured here</p>
+    </hgroup>
+    <a routerLink="/add-role"><div class="buttons">
+        <button class="btn-add-role" type="button">
+            <img src="/assets/emp-detail-part/add.svg" alt="Add Role Icon" >
+            <span>ADD ROLE</span></button>
+    </div>
+</a>
+</div>
+<app-multiselect-filter [showStatus]="false"></app-multiselect-filter>
+<div class="card-container" id="cardInfo">  
+<app-role-card *ngFor = "let role of Role" [Role]="role"></app-role-card>
+</div>
+</main>

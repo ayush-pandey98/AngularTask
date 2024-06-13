@@ -1,0 +1,17 @@
+<div class="employees">
+    <div class="actions">
+        <hgroup>
+            <h3>Employees</h3>
+            <p>Find all of your company's employee accounts and their associated roles.</p>
+        </hgroup>
+        <div class="buttons">
+            <button class="btn-export" type="button" (click)="exportToCsv()">
+                <img  src="/assets/emp-detail-part/export.svg" alt="Export Icon">
+                <span>EXPORT</span>
+            </button>
+           <a routerLink="/add-employee"><button class="btn-add-emp" type="button">
+                <img src="/assets/emp-detail-part/add.svg" alt="Add Employee Icon" >
+                <span>ADD EMPLOYEE</span></button>
+           </a>
+        </div>
+    </div>

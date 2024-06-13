@@ -1,0 +1,40 @@
+.updates-info-container {
+    background-color: #fef6f6;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: Roboto400;
+  }
+  .update-info .title {
+    color: #f44848;
+    font-family: Roboto500;
+    padding: 5px 0px 3px 0px;
+  }
+  .update-info .description {
+    color: #bbc2c8;
+    font-size: 0.9em;
+    padding: 5px 0px;
+  }
+  .update-info {
+    padding-bottom: 10px;
+  }
+  .updates-info-container .button {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .updates-info-container .button .btn-dismiss {
+    width: 70px;
+    background-color: #fde6e6;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: #f44848;
+  }
+  .updates-info-container .button .btn-accept {
+    width: 70px;
+    background-color: #f44848;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }

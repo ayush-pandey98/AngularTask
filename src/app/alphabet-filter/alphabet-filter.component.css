@@ -1,0 +1,25 @@
+.alphabet-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .alphabet-list li img {
+    margin-right: 8px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .alphabet-list button {
+    border: 1px solid #eaebee;
+    background-color: #eaebee;
+    color: #8592a3;
+    border-radius: 5px;
+    height: 35px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .alphabet-list button:hover {
+    background-color: #f44848;
+    color: white;
+  }

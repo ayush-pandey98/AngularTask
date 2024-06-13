@@ -1,0 +1,68 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  .forward-arrow {
+   height :12px;
+   width: 14px;
+   rotate:90deg;
+  }
+  hgroup h3 {
+    padding: 10px 0;
+    font-family: Roboto400;
+    font-size: 1.05em;
+    color: #788693;
+    display: f;
+  }
+  hgroup h3 a {
+    text-decoration: none;
+    color: #788693;
+  }
+  a{
+    text-decoration: none;
+  }
+  hgroup p {
+    padding: 4px 0;
+    font-size: 1em;
+    color: #a1abb4;
+    font-family: Roboto400;
+  }
+  .actions .buttons {
+    display: flex;
+    align-items: center;
+  }
+  .actions .buttons .btn-add-emp {
+    display: flex;
+    background-color: #f44848;
+    border: 1px solid #f44848;
+    color: rgba(255, 255, 255, 0.828);
+    border-radius: 8px;
+    height: 38px;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .actions .buttons .btn-add-emp span {
+    padding-left: 8px;
+  }
+  .roles-info h3 {
+    font-family: Roboto400;
+    font-size: 1.2em;
+  }
+  .roles-info p {
+    padding: 10px 0;
+    color: #a1abb4df;
+    font-family: Roboto500;
+    font-size: 0.9em;
+    line-height: 20px;
+  }
+  .card-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-auto-rows: minmax(215px, auto);
+    gap: 15px;
+    color: grey;
+  }

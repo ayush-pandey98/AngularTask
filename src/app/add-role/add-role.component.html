@@ -1,0 +1,42 @@
+<main>
+<div class="add-role-section">
+    <form class="add-role-form">
+      <h3>Create New Role</h3>
+      <div class="role-department-section">
+        <div class="input-form">
+          <label for="role-name">Role Name</label>
+          <input type="text" id="roleName" name="roleName" placeholder="Text" class="form-element-input"/>
+        </div>
+        <div class="input-form">
+          <label for="department">Department</label>
+          <select id="department" class="form-element-input" name="department">
+          </select>
+        </div>
+      </div>
+      <div class="input-form">
+        <label for="role-description">Description</label>
+        <textarea
+          id="role-description"
+          placeholder="Text"
+          rows="10"
+          class="form-element-input"
+        ></textarea>
+      </div>
+      <div class="input-form select">
+        <label for="location">Location</label>
+        <select id="location" class="form-element-input" name="location">
+        </select>
+      </div>
+      <div class="input-form select">
+        <label for="Assign Employees">Assign Employees</label>
+        <input type="text" id="assignEmployees" placeholder="Search" (click)="showEmpDrop()" oninput="createEmployeeDropdown()"/>
+        <div class="dropdown-content" id="dropdownOption" (click)="maintainDropdown(event)">
+        </div>
+      </div>
+      <div class="form-buttons">
+        <input id="cancel" type="button" value="Cancel" />
+        <input id="submit" type="button" value="Add Role" (click)="addRoleBtn(event)" />
+      </div>
+    </form>
+  </div>
+</main>

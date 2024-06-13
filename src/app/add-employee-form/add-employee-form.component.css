@@ -1,0 +1,190 @@
+main{
+    padding: 15px;
+}
+.employee-details {
+    padding: 15px 90px 15px 20px;
+    width: 100%;
+    min-height: 90%;
+  }
+  .employee-details .title {
+    font-size: 18px; 
+    color: #1a1a1a;
+    padding: 10px;
+    font-family: Roboto500;
+  }
+  .employee-details .personal-information {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .personal-information .left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+    height: 100%;
+    width: 12%;
+  }
+  .personal-information .left-wrapper label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .personal-information .left-wrapper label + input {
+    visibility: hidden;
+  }
+  .personal-information .left-wrapper .img-wrapper {
+    width: fit-content;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .personal-information .left-wrapper .img-wrapper img {
+    width: 70px;
+  }
+  .personal-information .left-wrapper p {
+    color: #6a6f74;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+  .personal-information .left-wrapper p:hover {
+    border: 1px solid lightgray;
+    background: rgba(120, 118, 118, 0.269);
+  }
+  .personal-information .right-wrapper {
+    width: 90%;
+  }
+  .name img{
+    height: 16px;
+    top: 290px;
+    right: 342px;
+    position: absolute;
+  }
+  .right-wrapper .title {
+    font-size: 16px;
+    color: #1a1a1a;
+    font-family: Roboto500;
+    padding: 10px 0 20px 0;
+  }
+  .input-form-element {
+    background: #fafbfc;
+    border: 2px solid #dfe1e6;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    color: black;
+    font-family: Roboto400;
+  }
+  .input-form-element:focus {
+    border: 2px solid #6cacff;
+  }
+  .input-form-element::placeholder {
+    color: black;
+  }
+  .name span {
+    color: red;
+    font-size: 8px;
+  }
+  .employee-number {
+    display: flex;
+    flex-direction: column;
+  }
+  .employee {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .employee .name {
+    display: flex;
+    flex-direction: column;
+  }
+  .employee .name input {
+    width: 240px;
+  }
+  .employee-number input {
+    width: 25%;
+  }
+  .employee-number label,
+  .name label {
+    font-size: 12px;
+    font-family: Roboto500;
+    color: #707580;
+    padding: 8px 0;
+  }
+  .employment-information {
+    width: 100%;
+  }
+  .employment-information .details {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .employment-information .details .input-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-form label {
+    font-family: Roboto500;
+    font-size: 12px;
+    color: #707580;
+    padding: 5px 0;
+  }
+  .input-form span {
+    color: red;
+    font-size: 8px;
+  }
+  input[type="file"] {
+    display: none;
+  }
+  .employment-information .btn-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 40px 60px 40px 0;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .employment-information .btn-wrapper .cancel button {
+    background: #fbebeb;
+    color: #f55a5a;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 8px;
+  }
+  .employment-information .btn-wrapper .add-employee button {
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #f44848;
+    color: #ffffff;
+  }
+  
+  /* Required Fields */
+  .error-border{
+    border-color: red;
+  }

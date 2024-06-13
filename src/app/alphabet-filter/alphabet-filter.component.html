@@ -1,0 +1,9 @@
+<ul id="alphabets" class="alphabet-list">
+    <li><img id="filterAlphabet" src="/assets/emp-detail-part/filter.svg"  alt="Filter Icon"></li>
+    <li *ngFor="let alphabet of alphabets">
+        <button (click)="onAlphabetButtonClick(alphabet)">{{alphabet}}</button>
+    </li>
+</ul>
+
+<input type="hidden" [(ngModel)]="selectedAlphabet">
+

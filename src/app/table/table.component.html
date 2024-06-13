@@ -1,0 +1,82 @@
+<div id="tableId" class="employees-table" data-sort-direction="asc">
+    <div class="actions">
+      <div class="left-section">
+        <img src="/assets/table/arrow-turn left -down.svg" alt="Down Left Arrow">
+        <button id="deleteButton" (click)="deleteSelectedEmployee()" type="button">Delete</button>
+      </div>
+      <img src="/assets/table/table-add.svg" alt="Add Table">
+    </div>
+    <table id="empTable" class="table" data-sort-direction="asc">
+      <thead class="header">
+        <tr>
+          <th class="checkbox-th heading">
+            <input type="checkbox" id="selectAllCheckbox" (click)="toggleAllCheckboxes($event)" (change)="toggleDeleteButton($event)">
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('firstName')">USER </label>
+            <label class="short-arrow"><span id="firstNameAsc"><</span> <span id="firstNameDesc">></span></label>
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('location')">LOCATION </label>
+            <label class="short-arrow"><span id="locationAsc"><</span> <span id="locationDesc">></span></label>
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('department')">DEPARTMENT </label>
+            <label class="short-arrow"><span id="departmentAsc"><</span> <span id="departmentDesc">></span></label>
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('jobTitle')">ROLE </label>
+            <label class="short-arrow"><span id="jobTitleAsc"><</span> <span id="jobTitleDesc">></span></label>
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('empNo')">EMP NO </label>
+            <label class="short-arrow"><span id="empNoAsc"><</span> <span id="empNoDesc">></span></label>
+          </th>
+          <th class="heading heading-status">
+            <label (click)="sortTable('status')">STATUS </label>
+            <label class="short-arrow"><span id="statusAsc"><</span> <span id="statusDesc">></span></label>
+          </th>
+          <th class="heading">
+            <label (click)="sortTable('joiningDate')">JOIN DT </label>
+            <label class="short-arrow"><span id="joiningDateAsc"><</span> <span id="joiningDateDesc">></span></label>
+          </th>
+          <th class="heading">
+            <span class="ellipses"><img class="ellipses-image" src="/assets/table/ellipsis-image.svg" alt="ellipses"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="employeeDetails">
+        <tr *ngFor="let employee of employees">
+          <td class="checkbox-td">
+            <input type="checkbox" (change)="toggleDeleteButton($event)">
+          </td>
+          <td class="details">
+            <img [src]="employee.Profilepicture" alt="Employee Image">
+            <div class="credentials">
+              <p class="name">{{employee.Name}}</p>
+              <p class="email">{{employee.Email}}</p>
+            </div>
+          </td>
+          <td>{{employee.Location}}</td>
+          <td>{{employee.Department}}</td>
+          <td>{{employee.Role}}</td>
+          <td class="id" [id]="employee.Id">{{employee.Id}}</td>
+          <td>
+            <div class="status">Active</div>
+          </td>
+          <td>{{employee.JoiningDate}}</td>
+          <td class="ellipses">
+            <img class="ellipses-image" src="/assets/table/ellipsis-image.svg" alt="ellipses" (click)="ellipsesShow($event)">
+            <div class="ellipse-dropdown hidden">
+              <label class="ellipse-option" (click)="viewDetails(employee.Id)">View Details</label>
+              <div class="hr-line"></div>
+              <span class="ellipse-option" (click)="editEmployee(employee.Id)">Edit</span>
+              <div class="hr-line"></div>
+              <span class="ellipse-option" (click)="deleteEmp(employee.Id)">Delete</span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

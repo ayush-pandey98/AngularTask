@@ -1,0 +1,49 @@
+<nav id="leftNavBar" class="left-nav">
+    <div class="logo-container">
+        <img id="tezoLogo" class="logo"  src="assets/left-nav/tezo-logo.svg" alt="Tezo Logo">
+        <img id ="arrowButton" class="minimise-nav"  src="assets/left-nav/handle.png" alt="Navbar minimise button">
+    </div>
+    <div class="wrapper">
+        <div class="items">
+            <div class="all-pages-container">
+                <p class="heading">ALL</p>
+                <div class="nav-option">
+                    <div class="option">
+                        <img  src="assets/left-nav/dashboard.svg" alt="Lock icon" >
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <a routerLink="/employees">
+                <div routerLinkActive="active" class="nav-option">
+                    <div class="option">
+                        <img [src]="isEmployeeActive ? 'assets/left-nav/employee.svg' : '/assets/roles-details/employee.svg'" alt="Role icon">
+                        <p routerLinkActive="selected-text">Employees</p>
+                        <div id="selectOpt" routerLinkActive="selected-option"></div>
+                    </div> 
+                </div>
+            </a>
+            </div>
+            <div class="management-container">
+                <p class="heading">ROLE / USER MANAGEMENT</p>
+                <a routerLink="role">
+                    <div routerLinkActive="active" class="nav-option nav-roles">
+                        <div class="option">
+                          <img [src]="isRoleActive ? 'assets/roles-details/roles.svg' : 'assets/left-nav/roles.svg'" alt="Role icon">
+                        <p routerLinkActive="selected-text">Roles</p>
+                        <div id="selectOpt" routerLinkActive="selected-option"></div>
+                        </div>
+                       <span> <img [src]="isRoleActive ? 'assets/left-nav/red-right-arrow.svg' : 'assets/left-nav/arrow-right.svg'" alt="arrow"></span>
+                    </div>
+                </a>
+                <div class="nav-option nav-access-rights">
+                    <div class="option">
+                        <img  src="assets/left-nav/acess-right.svg"  alt="Acess Right icon">
+                        <p>Access Rights</p>
+                    </div>
+                    <span><img src="assets/left-nav/arrow-right.svg" alt="right arrow"></span>
+                </div>
+            </div>
+        </div>
+        <app-update-box></app-update-box>
+    </div>
+</nav>

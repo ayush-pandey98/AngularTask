@@ -1,0 +1,24 @@
+<main>
+<app-top-nav></app-top-nav>
+<div class="employees">
+    <div class="actions">
+        <hgroup>
+            <h3><a href="/components/html/role.html">Roles</a><span ><img class="forward-arrow" src="/assets/left-nav/arrow-right.svg" alt="right arrow"></span>Employees</h3>
+            <p>All the roles are configured here.</p>
+        </hgroup>
+        <a routerLink="/add-employee"><div class="buttons">
+            <button class="btn-add-emp" type="button">
+                <img src="/assets/emp-detail-part/add.svg" alt="Add Employee Icon" >
+                <span>ADD EMPLOYEE</span></button>
+        </div>
+    </a>
+    </div>
+    <div class="roles-info">
+        <h3>Role Description</h3>
+        <p>Configure the providers that are available to users when they sign in. Configure the providers that are available to users when they sign in. Configure the providers that are available to users when they sign in. Configure the providers that are available to users when they sign in.</p>
+    </div>
+</div>
+<div class="card-container">
+    <app-role-detail-card *ngFor="let employee of employees" [employees]="employee"></app-role-detail-card>          
+</div>
+</main>

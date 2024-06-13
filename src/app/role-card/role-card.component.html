@@ -1,0 +1,32 @@
+    <div class="card">
+      <div class="heading">
+        <h3>{{ Role.Name }}</h3>
+        <img src="/assets/roles/edit.svg" alt="Edit Icon">
+      </div>
+      <div class="details">
+        <div class="item">
+          <div class="title">
+            <img src="/assets/roles/team logo.svg" alt="Team Icon">
+            <span>Department</span>
+          </div>
+          <p>{{ Role.DepartmentName }}</p>
+        </div>
+        <div class="item">
+          <div class="title">
+            <img src="/assets/roles/location.svg" alt="Location Icon">
+            <span>Location</span>
+          </div>
+          <p>{{ Role.LocationName }}</p>
+        </div>
+        <div class="item">
+          <span>Total Employees</span>
+          <span class="icons"><img class="icon-1" [src]="Role.ProfilePictures" alt="Profile Avatar"><div class="total-count">+47</div></span>
+        </div>
+      </div>
+      <div class="view-all" (click)="navigateToRoleDetail(Role.Id)">
+        <span>View all Employees</span>
+        <img alt="Right Arrow Icon" src="/assets/roles/right arrow.svg">
+      </div>
+    </div>
+
+  

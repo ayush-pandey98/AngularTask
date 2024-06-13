@@ -1,0 +1,53 @@
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  hgroup h3 {
+    padding: 10px;
+    font-family: Roboto400;
+    font-size: 1.1em;
+    color: #788693;
+  }
+  hgroup p {
+    padding: 5px 10px;
+    font-size: 1em;
+    color: #a1abb4;
+    font-family: Roboto400;
+  }
+  .actions .buttons {
+    display: flex;
+    align-items: center;
+  }
+  .actions .buttons .btn-export {
+    display: flex;
+    background-color: white;
+    border: 1.5px solid #d8dbe0;
+    color: #949fae;
+    border-radius: 8px;
+    height: 35px;
+    width: 110px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .actions .buttons .btn-export span {
+    padding-left: 8px;
+    font-family: Roboto500;
+  }
+  .actions .buttons .btn-add-emp {
+    display: flex;
+    background-color: #f44848;
+    border: 1px solid #f44848;
+    color: rgba(255, 255, 255, 0.828);
+    border-radius: 8px;
+    height: 38px;
+    width: 190px;
+    margin-left: 15px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .actions .buttons .btn-add-emp span {
+    padding-left: 8px;
+  }

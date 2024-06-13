@@ -1,0 +1,100 @@
+<main>
+<app-top-nav></app-top-nav>
+<div class="employee-details">
+    <div class="title" id="editTitle">Add Employee</div>
+    <div class="personal-information">
+      <div class="left-wrapper">
+        <div class="img-wrapper">
+          <img id="profilePic" src="/assets/employee-avatar/profile.png" alt="profile" />
+        </div>
+        <label class="edit-btn">
+          <input type="file" placeholder="Edit" id="uploadImage" (change)="imgUpload($event)" />
+          Edit
+        </label>
+      </div>
+      <div class="right-wrapper">
+        <!-- Collecting User Input -->
+        <form>
+          <div class="title">Personal information</div>
+          <div class="employee-information">
+            <div class="name employee-number">
+              <label for="empNo">Employee Number</label>
+              <input class="input-form-element" type="text" placeholder="Text" id="empNo" formControlName="empNo" required />
+            </div>
+            <div class="employee">
+              <div class="name">
+                <label for="firstName">First Name</label>
+                <input class="input-form-element" type="text" placeholder="Text" id="firstName" formControlName="firstName" required />
+              </div>
+              <div class="name">
+                <label for="lastName">Last Name</label>
+                <input class="input-form-element" type="text" placeholder="Text" id="lastName" formControlName="lastName" required />
+              </div>
+              <div class="name">
+                <label for="dob">Date of Birth</label>
+                <input class="input-form-element" type="date" id="dob" formControlName="dob" />
+              </div>
+            </div>
+            <div class="employee">
+              <div for="emailId" class="name">
+                <label for="email">Email Id</label>
+                <input class="input-form-element" type="email" placeholder="joe.j@technovert.com" id="email" formControlName="email" required />
+              </div>
+              <div class="name">
+                <label for="mobile">Mobile Number</label>
+                <input class="input-form-element" type="text" placeholder="00000000000" id="mobile" formControlName="mobile" />
+              </div>
+            </div>
+          </div>
+          <div class="title">Employment information</div>
+          <div class="employment-information">
+            <div class="details">
+              <div class="input-form name">
+                <label for="joiningDate">Joining Date</label>
+                <input type="date" class="input-form-element" id="joiningDate" formControlName="joiningDate" required />
+                <span id="requiredJDate"></span>
+              </div>
+              <div class="input-form">
+                <label for="location">Location</label>
+                <select class="input-form-element" formControlName="location" id="location">
+                </select>
+              </div>
+            </div>
+            <div class="details">
+              <div class="input-form">
+                <label for="jobTitle">Job Title</label>
+                <select class="input-form-element" formControlName="jobTitle" id="jobTitle">
+                </select>
+              </div>
+              <div class="input-form">
+                <label for="department">Department</label>
+                <select class="input-form-element" formControlName="department" id="department">
+                </select>
+              </div>
+            </div>
+            <div class="details">
+              <div class="input-form">
+                <label for="assignManager">Assign Manager</label>
+                <select class="input-form-element" id="assignManager" formControlName="assignManager">
+                </select>
+              </div>
+              <div class="input-form">
+                <label for="assignProject">Assign Project</label>
+                <select class="input-form-element" id="assignProject" formControlName="assignProject">
+                </select>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <div class="cancel">
+                <button id="cancelBtn" (click)="cancelSubmission($event)">Cancel</button>
+              </div>
+              <div class="add-employee">
+                <button id="addEmployeeBtn" class="form-add-employee" type="submit" (click)="onSubmit()">Add Employee</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
